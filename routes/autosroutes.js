@@ -4,9 +4,9 @@ const router = express.Router();
 const autoController = require('../controller/autoscontroller');
 
 // Ruta para obtener autos disponibles
-router.get('/', autoController.autosDisponibles);
+router.get('/auticos', autoController.autosDisponibles);
 
 // Ruta para registrar un nuevo auto
-router.post('/', autoController.registrarAuto);
+router.post('/auto', autoController.registrarAuto);
 
 module.exports = router;
